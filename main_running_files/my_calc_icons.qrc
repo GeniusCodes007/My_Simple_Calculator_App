@@ -1,0 +1,10 @@
+<RCC>
+  <qresource prefix="myIcons">
+    <file>calc_icon.jpg</file>
+    <file>clear_history.png</file>
+    <file>combination.jpeg</file>
+    <file>factorial.jpeg</file>
+    <file>permutation.jpg</file>
+    <file>reciprocal.png</file>
+  </qresource>
+</RCC>
