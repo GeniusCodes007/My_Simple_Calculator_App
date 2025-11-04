@@ -141,6 +141,9 @@ background-color: rgb(206, 255, 240);</string>
             <property name="styleSheet">
              <string notr="true">background-color: rgb(170, 170, 255);</string>
             </property>
+            <property name="inputMethodHints">
+             <set>Qt::InputMethodHint::ImhDigitsOnly|Qt::InputMethodHint::ImhFormattedNumbersOnly|Qt::InputMethodHint::ImhPreferNumbers</set>
+            </property>
             <property name="text">
              <string/>
             </property>

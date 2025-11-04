@@ -3,7 +3,7 @@ from editing_actions_files.solving import Solving
 from PySide6.QtWidgets import QApplication,QMainWindow
 from PySide6.QtGui import QIcon
 
-class CalculatorFirst( QMainWindow,Solving, ButtonActions):
+class CalculatorFirst( QMainWindow, Solving, ButtonActions):
     def __init__(self):
         super(CalculatorFirst, self).__init__()
         self.setupUi(self)

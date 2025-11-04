@@ -1,9 +1,9 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'basic_calculator_appLfYayG.ui'
+## Form generated from reading UI file 'basic_calculator_appsNBobY.ui'
 ##
-## Created by: Qt User Interface Compiler version 6.10.0
+## Created by: Qt User Interface Compiler version 6.9.2
 ##
 ## WARNING! All changes made in this file will be lost when recompiling UI file!
 ################################################################################
@@ -83,6 +83,7 @@ class Ui_MainWindow(object):
         self.number_input.setMaximumSize(QSize(16777215, 16777215))
         self.number_input.setFont(font)
         self.number_input.setStyleSheet(u"background-color: rgb(170, 170, 255);")
+        self.number_input.setInputMethodHints(Qt.InputMethodHint.ImhDigitsOnly|Qt.InputMethodHint.ImhFormattedNumbersOnly|Qt.InputMethodHint.ImhPreferNumbers)
 
         self.verticalLayout.addWidget(self.number_input)
 

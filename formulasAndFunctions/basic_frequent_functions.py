@@ -20,8 +20,9 @@ class BasicFrequentFunctions:
     
     @staticmethod
     def square_root(num: float): return num ** (1/2)
-    
-    def cube_root(self,num: float): return num ** (1/3)
+
+    @staticmethod
+    def cube_root(num: float): return num ** (1/3)
     #done
     @staticmethod
     def percentage(base_num: float, percent_num: float): return float(base_num) * float(percent_num / 100)
