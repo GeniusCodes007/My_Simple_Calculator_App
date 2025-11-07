@@ -1,13 +1,18 @@
+
+from PySide6.QtGui import QFont
+
 from  main_running_files.ui_basic_calculator_app import Ui_MainWindow
 from formulasAndFunctions.advanced_basic_methods import AdvancedBasicMethods
 from formulasAndFunctions.basic_frequent_functions import BasicFrequentFunctions
 from formulasAndFunctions.trig_methods import TrigMethods, Inverse
+from PySide6.QtWidgets import QLabel
 
 class Solving(Ui_MainWindow):
     operator = ""
     val_1 = ""
     val_2 = ""
     answer = ""
+    position = 0
 
     def one(self):
         if self.number_input.text() == "0" or self.number_input.text() == "":
@@ -99,8 +104,6 @@ class Solving(Ui_MainWindow):
                     val_to_use = 1
                 else:
                     val_to_use = self.val_2
-                self.input_display.setText(f"{self.val_1}\u00B3")
-                self.number_input.setText(f"{val_to_use}")
                 self.answer = val_to_use * BasicFrequentFunctions().cube(self.val_1)
 
             elif self.operator == "^2":
@@ -108,8 +111,6 @@ class Solving(Ui_MainWindow):
                     val_to_use = 1
                 else:
                     val_to_use = self.val_2
-                self.input_display.setText(f"{self.val_1}\u00B2")
-                self.number_input.setText(f"{val_to_use}")
                 self.answer = val_to_use * BasicFrequentFunctions().square(self.val_1)
 
             elif self.operator == "√":
@@ -117,8 +118,6 @@ class Solving(Ui_MainWindow):
                     val_to_use = 1
                 else:
                     val_to_use = self.val_2
-                self.input_display.setText(f"{self.operator}({self.val_1})")
-                self.number_input.setText(f"{val_to_use}")
                 self.answer = val_to_use * BasicFrequentFunctions().square_root(self.val_1)
 
             elif self.operator == "3√":
@@ -126,68 +125,26 @@ class Solving(Ui_MainWindow):
                     val_to_use = 1
                 else:
                     val_to_use = self.val_2
-                self.input_display.setText(F"{self.operator}({self.val_1})")
-                self.number_input.setText(f"{val_to_use}")
                 self.answer = val_to_use * BasicFrequentFunctions().cube_root(self.val_1)
 
-    #Yet to touch
-            elif self.operator == "sin":
-                self.val_2 = float(self.number_input.text())
-                self.input_display.setText(f"{self.val_1} sin({self.val_2})")
-                self.answer = TrigMethods().sine(self.val_2) * self.val_1
-                self.result_display.display(f"{self.answer:.5f}")
-                self.number_input.setText(f"{self.answer:.5f}")
+            my_font = QFont()
+            my_font.setPointSize(10)
+            my_font.setBold(True)
 
-            elif self.operator == "cos":
-                self.val_2 = float(self.number_input.text())
-                self.input_display.setText(f"{self.val_1} cos({self.val_2})")
-                self.answer = TrigMethods().cos(self.val_2) *self.val_1
-                self.result_display.display(f"{self.answer:.5f}")
-                self.number_input.setText(f"{self.answer:.5f}")
+            label = QLabel(self.scrollAreaWidgetContents)
+            label.setObjectName("answer_label")
+            label.setFont(my_font)
+            #label.setFrameShape(shape)
 
-            elif self.operator == "tan":
-                self.val_2 = float(self.number_input.text())
-                self.input_display.setText(f"{self.val_1} tan({self.val_2})")
-                self.answer = TrigMethods().tan(self.val_2) *self.val_1
-                self.result_display.display(f"{self.answer:.5f}")
-                self.number_input.setText(f"{self.answer:.5f}")
-
-            elif self.operator == "arc_sine":
-                self.val_2 = float(self.number_input.text())
-                self.input_display.setText(f"{self.val_1} sin({self.val_2})-1")
-                self.answer = self.val_1 * Inverse().arc_sine(self.val_2)
-                self.result_display.display(f"{self.answer:.5f}")
-                self.number_input.setText(f"{self.answer:.5f}")
-
-            elif self.operator == "arc_cos":
-                self.val_2 = float(self.number_input.text())
-                self.input_display.setText(f"{self.val_1} cos({self.val_2})-1")
-                self.answer = self.val_1 * Inverse().arc_cosine(self.val_2)
-                self.result_display.display(f"{self.answer:.5f}")
-                self.number_input.setText(f"{self.answer:.5f}")
-
-            elif self.operator == "arc_tan":
-                self.val_2 = float(self.number_input.text())
-                self.input_display.setText(f"{self.val_1} tan({self.val_2})-1")
-                self.answer = self.val_1 * Inverse().arc_tangent(self.val_2)
-                self.result_display.display(f"{self.answer:.5f}")
-                self.number_input.setText(f"{self.answer:.5f}")
-
-            #OUTSTANDINGS
-
-
-            elif self.operator == "fact":
-                self.val_2 = float(self.number_input.text())
-                self.input_display.setText(f"fact({self.val_1})")
-                self.answer = AdvancedBasicMethods().factorial(self.val_1)
-                self.result_display.display(f"{self.answer:.5f}")
-                self.number_input.setText(f"{self.answer:.5f}")
-
+            label.setText(f"{self.input_display.text()} {self.number_input.text()} = {self.answer}")
+            label.adjustSize()
             self.result_display.display(f"{self.answer}")
-            self.input_display.setText(f"{self.answer}")
+            self.input_display.setText(f"0")
             self.number_input.setText(f"0")
+            self.gridLayout.addWidget(label, self.position, 0)
+            self.position = self.position + 1
 
         except ValueError:
-            self.result_display.display(f"0")
+            self.result_display.display(f"You May Have Given The Wrong Inputs")
             self.input_display.setText(f"0")
             self.number_input.setText(f"0")

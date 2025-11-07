@@ -69,6 +69,7 @@ class CalculatorFirst( QMainWindow, Solving, ButtonActions):
         self.pushButton_arc_sine.clicked.connect(self.arc_sine_button)
         self.pushButton_arc_cosine.clicked.connect(self.arc_cos_button)
         self.pushButton_arc_tan.clicked.connect(self.arc_tan_button)
+        self.pushButton_factorial.clicked.connect(self.factorial_button)
 
         self.pushButton_equal_to.clicked.connect(self.ans)
 

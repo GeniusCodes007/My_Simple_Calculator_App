@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'basic_calculator_appsNBobY.ui'
+## Form generated from reading UI file 'basic_calculator_appBHcflS.ui'
 ##
 ## Created by: Qt User Interface Compiler version 6.9.2
 ##
@@ -17,8 +17,8 @@ from PySide6.QtGui import (QBrush, QColor, QConicalGradient, QCursor,
     QPalette, QPixmap, QRadialGradient, QTransform)
 from PySide6.QtWidgets import (QApplication, QFrame, QGridLayout, QHBoxLayout,
     QLCDNumber, QLabel, QLineEdit, QMainWindow,
-    QPushButton, QSizePolicy, QTabWidget, QVBoxLayout,
-    QWidget)
+    QPushButton, QScrollArea, QSizePolicy, QTabWidget,
+    QVBoxLayout, QWidget)
 import my_calc_icons_rc
 
 class Ui_MainWindow(object):
@@ -530,19 +530,10 @@ class Ui_MainWindow(object):
 "")
         self.historyFrame.setFrameShape(QFrame.Shape.WinPanel)
         self.historyFrame.setFrameShadow(QFrame.Shadow.Raised)
-        self.verticalLayout_4 = QVBoxLayout(self.historyFrame)
-        self.verticalLayout_4.setObjectName(u"verticalLayout_4")
+        self.verticalLayout_6 = QVBoxLayout(self.historyFrame)
+        self.verticalLayout_6.setObjectName(u"verticalLayout_6")
         self.horizontalLayout_9 = QHBoxLayout()
         self.horizontalLayout_9.setObjectName(u"horizontalLayout_9")
-        self.pushButton = QPushButton(self.historyFrame)
-        self.pushButton.setObjectName(u"pushButton")
-        self.pushButton.setMinimumSize(QSize(71, 30))
-        self.pushButton.setMaximumSize(QSize(16777215, 30))
-        self.pushButton.setFont(font)
-        self.pushButton.setStyleSheet(u"background-color: rgb(170, 170, 127);")
-
-        self.horizontalLayout_9.addWidget(self.pushButton)
-
         self.pushButton_clear_history = QPushButton(self.historyFrame)
         self.pushButton_clear_history.setObjectName(u"pushButton_clear_history")
         self.pushButton_clear_history.setMinimumSize(QSize(100, 30))
@@ -562,7 +553,7 @@ class Ui_MainWindow(object):
         self.horizontalLayout_9.addWidget(self.pushButton_clear_history)
 
 
-        self.verticalLayout_4.addLayout(self.horizontalLayout_9)
+        self.verticalLayout_6.addLayout(self.horizontalLayout_9)
 
         self.historyLabel = QLabel(self.historyFrame)
         self.historyLabel.setObjectName(u"historyLabel")
@@ -577,11 +568,19 @@ class Ui_MainWindow(object):
         self.historyLabel.setFrameShadow(QFrame.Shadow.Raised)
         self.historyLabel.setIndent(60)
 
-        self.verticalLayout_4.addWidget(self.historyLabel)
+        self.verticalLayout_6.addWidget(self.historyLabel)
 
-        self.historyWidget = QWidget(self.historyFrame)
+        self.scrollArea = QScrollArea(self.historyFrame)
+        self.scrollArea.setObjectName(u"scrollArea")
+        self.scrollArea.setWidgetResizable(True)
+        self.scrollAreaWidgetContents = QWidget()
+        self.scrollAreaWidgetContents.setObjectName(u"scrollAreaWidgetContents")
+        self.scrollAreaWidgetContents.setGeometry(QRect(-141, 0, 318, 422))
+        self.verticalLayout_4 = QVBoxLayout(self.scrollAreaWidgetContents)
+        self.verticalLayout_4.setObjectName(u"verticalLayout_4")
+        self.historyWidget = QWidget(self.scrollAreaWidgetContents)
         self.historyWidget.setObjectName(u"historyWidget")
-        self.historyWidget.setMinimumSize(QSize(189, 411))
+        self.historyWidget.setMinimumSize(QSize(300, 404))
         self.verticalLayout_5 = QVBoxLayout(self.historyWidget)
         self.verticalLayout_5.setObjectName(u"verticalLayout_5")
         self.gridLayout = QGridLayout()
@@ -645,6 +644,10 @@ class Ui_MainWindow(object):
 
 
         self.verticalLayout_4.addWidget(self.historyWidget)
+
+        self.scrollArea.setWidget(self.scrollAreaWidgetContents)
+
+        self.verticalLayout_6.addWidget(self.scrollArea)
 
 
         self.horizontalLayout_7.addWidget(self.historyFrame)
@@ -745,7 +748,6 @@ class Ui_MainWindow(object):
         self.pushButton_plus.setShortcut(QCoreApplication.translate("MainWindow", u"+", None))
 #endif // QT_CONFIG(shortcut)
         self.pushButton_cube.setText("")
-        self.pushButton.setText(QCoreApplication.translate("MainWindow", u"Hide", None))
         self.pushButton_clear_history.setText(QCoreApplication.translate("MainWindow", u"Clear History", None))
         self.historyLabel.setText(QCoreApplication.translate("MainWindow", u"History", None))
         self.history_label_2.setText("")
