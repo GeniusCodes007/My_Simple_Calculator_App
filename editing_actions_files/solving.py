@@ -1,13 +1,9 @@
 
-from PySide6.QtGui import QFont
-
-from  main_running_files.ui_basic_calculator_app import Ui_MainWindow
-from formulasAndFunctions.advanced_basic_methods import AdvancedBasicMethods
-from formulasAndFunctions.basic_frequent_functions import BasicFrequentFunctions
-from formulasAndFunctions.trig_methods import TrigMethods, Inverse
+from editing_actions_files.button_actions import *
 from PySide6.QtWidgets import QLabel
 
-class Solving(Ui_MainWindow):
+class Solving(ButtonActions):
+
     operator = ""
     val_1 = ""
     val_2 = ""
@@ -106,7 +102,6 @@ class Solving(Ui_MainWindow):
             label = QLabel(self.scrollAreaWidgetContents)
             label.setObjectName("answer_label")
             label.setFont(my_font)
-            #label.setFrameShape(shape)
 
             label.setText(f"{self.input_display.text()} {self.number_input.text()} = {self.answer}")
             label.adjustSize()

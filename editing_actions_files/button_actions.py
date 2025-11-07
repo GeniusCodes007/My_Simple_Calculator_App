@@ -1,15 +1,27 @@
+from PySide6.QtGui import QFont
+
 from main_running_files.ui_basic_calculator_app import Ui_MainWindow
 from formulasAndFunctions.trig_methods import TrigMethods, Inverse
 from formulasAndFunctions.advanced_basic_methods import AdvancedBasicMethods
 from formulasAndFunctions.basic_frequent_functions import BasicFrequentFunctions
+from PySide6.QtWidgets import QLabel
 
 
 
 class ButtonActions(Ui_MainWindow):
-    operator = ""
-    val_1 = ""
-    val_2 = ""
-    answer = ""
+    def __init__(self):
+        super().__init__()
+        self.operator = ""
+        self.val_1 = ""
+        self.val_2 = ""
+        self.answer = ""
+
+        my_font = QFont()
+        my_font.setPointSize(10)
+        my_font.setBold(True)
+
+
+
 
     def clear(self):
         self.number_input.setText(f"0")
@@ -156,11 +168,9 @@ class ButtonActions(Ui_MainWindow):
 #NOT YET TOUCHED
     def sine_button(self):
         if self.input_display.text() == "0":
-            print("It's Empty")
             self.input_display.setText(f"{TrigMethods().sine(float(self.number_input.text()))}")
             self.number_input.setText(F"0")
         elif self.input_display.text() != "0":
-            print("It's Not Zero Here")
             self.number_input.setText(f"{TrigMethods().sine(float(self.number_input.text()))}")
         
         self.pushButton_dot.setEnabled(True)
@@ -226,5 +236,8 @@ class ButtonActions(Ui_MainWindow):
         self.number_input.setText(F"0")
         self.pushButton_dot.setEnabled(True)
 
+
+# Non-Arithmetical Buttons
+    #def clear_history(self):
 
 

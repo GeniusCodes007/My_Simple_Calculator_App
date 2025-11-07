@@ -1,17 +1,17 @@
-from editing_actions_files.button_actions import ButtonActions
-from editing_actions_files.solving import Solving
+
+from editing_actions_files.solving import *
 from PySide6.QtWidgets import QApplication,QMainWindow
 from PySide6.QtGui import QIcon
 
-class CalculatorFirst( QMainWindow, Solving, ButtonActions):
+class CalculatorFirst( QMainWindow, Solving):
     def __init__(self):
         super(CalculatorFirst, self).__init__()
         self.setupUi(self)
 
         self.setWindowIcon(QIcon("calc_icon.jpg"))
         
-        self.pushButton_permutation.setText(f"P \u207F\u1D63")
-        self.pushButton_combination.setText(f"C \u207F\u1D63")
+        self.pushButton_permutation.setText(f"P\u207F\u1D63")
+        self.pushButton_combination.setText(f"C\u207F\u1D63")
         self.pushButton_cube_root.setText(f"\u00B3\u221Ay")
         self.pushButton_square_root.setText(f"\u00B2\u221Ay")
         self.pushButton_square.setText(f"y\u00B2")
@@ -72,6 +72,7 @@ class CalculatorFirst( QMainWindow, Solving, ButtonActions):
         self.pushButton_factorial.clicked.connect(self.factorial_button)
 
         self.pushButton_equal_to.clicked.connect(self.ans)
+
 
 import sys
 app = QApplication()

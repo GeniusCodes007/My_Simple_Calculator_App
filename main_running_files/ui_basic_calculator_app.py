@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'basic_calculator_appBHcflS.ui'
+## Form generated from reading UI file 'basic_calculator_appAfBNgT.ui'
 ##
 ## Created by: Qt User Interface Compiler version 6.9.2
 ##
@@ -534,6 +534,15 @@ class Ui_MainWindow(object):
         self.verticalLayout_6.setObjectName(u"verticalLayout_6")
         self.horizontalLayout_9 = QHBoxLayout()
         self.horizontalLayout_9.setObjectName(u"horizontalLayout_9")
+        self.pushButton_hide = QPushButton(self.historyFrame)
+        self.pushButton_hide.setObjectName(u"pushButton_hide")
+        self.pushButton_hide.setMinimumSize(QSize(73, 30))
+        self.pushButton_hide.setMaximumSize(QSize(73, 30))
+        self.pushButton_hide.setFont(font)
+        self.pushButton_hide.setStyleSheet(u"background-color: rgb(159, 0, 0);")
+
+        self.horizontalLayout_9.addWidget(self.pushButton_hide)
+
         self.pushButton_clear_history = QPushButton(self.historyFrame)
         self.pushButton_clear_history.setObjectName(u"pushButton_clear_history")
         self.pushButton_clear_history.setMinimumSize(QSize(100, 30))
@@ -748,6 +757,7 @@ class Ui_MainWindow(object):
         self.pushButton_plus.setShortcut(QCoreApplication.translate("MainWindow", u"+", None))
 #endif // QT_CONFIG(shortcut)
         self.pushButton_cube.setText("")
+        self.pushButton_hide.setText(QCoreApplication.translate("MainWindow", u"Hide", None))
         self.pushButton_clear_history.setText(QCoreApplication.translate("MainWindow", u"Clear History", None))
         self.historyLabel.setText(QCoreApplication.translate("MainWindow", u"History", None))
         self.history_label_2.setText("")
