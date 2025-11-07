@@ -99,34 +99,6 @@ class Solving(Ui_MainWindow):
 
             elif self.operator == "r": self.answer = AdvancedBasicMethods().roots(self.val_1, int(self.val_2))
 
-            elif self.operator == "^3":
-                if self.val_2 == 0:
-                    val_to_use = 1
-                else:
-                    val_to_use = self.val_2
-                self.answer = val_to_use * BasicFrequentFunctions().cube(self.val_1)
-
-            elif self.operator == "^2":
-                if self.val_2 == 0:
-                    val_to_use = 1
-                else:
-                    val_to_use = self.val_2
-                self.answer = val_to_use * BasicFrequentFunctions().square(self.val_1)
-
-            elif self.operator == "√":
-                if self.val_2 == 0:
-                    val_to_use = 1
-                else:
-                    val_to_use = self.val_2
-                self.answer = val_to_use * BasicFrequentFunctions().square_root(self.val_1)
-
-            elif self.operator == "3√":
-                if self.val_2 == 0:
-                    val_to_use = 1
-                else:
-                    val_to_use = self.val_2
-                self.answer = val_to_use * BasicFrequentFunctions().cube_root(self.val_1)
-
             my_font = QFont()
             my_font.setPointSize(10)
             my_font.setBold(True)

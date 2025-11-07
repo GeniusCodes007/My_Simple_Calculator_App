@@ -142,12 +142,12 @@ class ButtonActions(Ui_MainWindow):
 
     def factorial_button(self):
         if self.input_display.text() == "0" or self.input_display.text() == "":
-            self.input_display.setText(f"{AdvancedBasicMethods().factorial(float(self.number_input.text()))}")
+            self.input_display.setText(f"{AdvancedBasicMethods().factorial(int(self.number_input.text()))}")
             self.number_input.setText(F"0")
         elif self.input_display.text() != "0" and self.number_input.text() != "0":
-            self.number_input.setText(f"{AdvancedBasicMethods().factorial(float(self.number_input.text()))}")
+            self.number_input.setText(f"{AdvancedBasicMethods().factorial(int(self.number_input.text()))}")
         else:
-            self.input_display.setText(F"{AdvancedBasicMethods().factorial(float(self.input_display.text()[0: len(self.input_display.text()) -1]))}")
+            self.input_display.setText(F"{AdvancedBasicMethods().factorial(int(self.input_display.text()[0: len(self.input_display.text()) -1]))}")
         
         self.pushButton_dot.setEnabled(True)
 
@@ -155,13 +155,13 @@ class ButtonActions(Ui_MainWindow):
 
 #NOT YET TOUCHED
     def sine_button(self):
-        if self.input_display.text() == "0" or self.input_display.text() == "":
+        if self.input_display.text() == "0":
+            print("It's Empty")
             self.input_display.setText(f"{TrigMethods().sine(float(self.number_input.text()))}")
             self.number_input.setText(F"0")
-        elif self.input_display.text() != "0" and self.number_input.text() != "0":
+        elif self.input_display.text() != "0":
+            print("It's Not Zero Here")
             self.number_input.setText(f"{TrigMethods().sine(float(self.number_input.text()))}")
-        else:
-            self.input_display.setText(F"{TrigMethods().sine(float(self.input_display.text()[0: len(self.input_display.text()) -1]))}")
         
         self.pushButton_dot.setEnabled(True)
 
@@ -171,8 +171,6 @@ class ButtonActions(Ui_MainWindow):
             self.number_input.setText(F"0")
         elif self.input_display.text() != "0" and self.number_input.text() != "0":
             self.number_input.setText(f"{TrigMethods().cos(float(self.number_input.text()))}")
-        else:
-            self.input_display.setText(F"{TrigMethods().cos(float(self.input_display.text()[0: len(self.input_display.text()) -1]))}")
         
         self.pushButton_dot.setEnabled(True)
 
@@ -182,41 +180,33 @@ class ButtonActions(Ui_MainWindow):
             self.number_input.setText(F"0")
         elif self.input_display.text() != "0" and self.number_input.text() != "0":
             self.number_input.setText(f"{TrigMethods().tan(float(self.number_input.text()))}")
-        else:
-            self.input_display.setText(F"{TrigMethods().tan(float(self.input_display.text()[0: len(self.input_display.text()) -1]))}")
         
         self.pushButton_dot.setEnabled(True)
 
     def arc_sine_button(self):
-        if self.input_display.text() == "0" or self.input_display.text() == "":
+        if self.input_display.text() == "0":
             self.input_display.setText(f"{Inverse().arc_sine(float(self.number_input.text()))}")
             self.number_input.setText(F"0")
-        elif self.input_display.text() != "0" and self.number_input.text() != "0":
+        elif self.input_display.text() != "0":
             self.number_input.setText(f"{Inverse().arc_sine(float(self.number_input.text()))}")
-        else:
-            self.input_display.setText(F"{Inverse().arc_sine(float(self.input_display.text()[0: len(self.input_display.text()) -1]))}")
         
         self.pushButton_dot.setEnabled(True)
 
     def arc_cos_button(self):
-        if self.input_display.text() == "0" or self.input_display.text() == "":
+        if self.input_display.text() == "0":
             self.input_display.setText(f"{Inverse().arc_cosine(float(self.number_input.text()))}")
             self.number_input.setText(F"0")
-        elif self.input_display.text() != "0" and self.number_input.text() != "0":
+        elif self.input_display.text() != "0":
             self.number_input.setText(f"{Inverse().arc_cosine(float(self.number_input.text()))}")
-        else:
-            self.input_display.setText(F"{Inverse().arc_cosine(float(self.input_display.text()[0: len(self.input_display.text()) -1]))}")
         
         self.pushButton_dot.setEnabled(True)
 
     def arc_tan_button(self):
-        if self.input_display.text() == "0" or self.input_display.text() == "":
+        if self.input_display.text() == "0":
             self.input_display.setText(f"{Inverse().arc_tangent(float(self.number_input.text()))}")
             self.number_input.setText(F"0")
-        elif self.input_display.text() != "0" and self.number_input.text() != "0":
+        elif self.input_display.text() != "0":
             self.number_input.setText(f"{Inverse().arc_tangent(float(self.number_input.text()))}")
-        else:
-            self.input_display.setText(F"{Inverse().arc_tangent(float(self.input_display.text()[0: len(self.input_display.text()) -1]))}")
         
         self.pushButton_dot.setEnabled(True)
 

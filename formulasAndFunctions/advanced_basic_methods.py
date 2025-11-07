@@ -9,12 +9,12 @@ class AdvancedBasicMethods:
             ans *= number
         return ans
 
-    def permutate(self, n, r):
+    def permutate(self, n:int, r:int):
         total_num = self.factorial(n)
         item_needed = self.factorial(n - r)
         return total_num / item_needed
 
-    def combine(self, n, r):
+    def combine(self, n:int, r:int):
         total_num = self.permutate(n, r)
         items_needed = self.factorial(r)
         return total_num / items_needed
@@ -31,7 +31,7 @@ class AdvancedBasicMethods:
 class EssentialMethods:
 
     @staticmethod
-    def mod_rem(base_num, divisor): return int(base_num % divisor)
+    def mod_rem(base_num:float, divisor:float): return int(base_num % divisor)
 
     @staticmethod
-    def mod_whole(base_num, divisor): return int(base_num // divisor)
+    def mod_whole(base_num:float, divisor:float): return int(base_num // divisor)
