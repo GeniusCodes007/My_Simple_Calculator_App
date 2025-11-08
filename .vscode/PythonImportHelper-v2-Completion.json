@@ -1,0 +1,754 @@
+[
+    {
+        "label": "QFont",
+        "importPath": "PySide6.QtGui",
+        "description": "PySide6.QtGui",
+        "isExtraImport": true,
+        "detail": "PySide6.QtGui",
+        "documentation": {}
+    },
+    {
+        "label": "QIcon",
+        "importPath": "PySide6.QtGui",
+        "description": "PySide6.QtGui",
+        "isExtraImport": true,
+        "detail": "PySide6.QtGui",
+        "documentation": {}
+    },
+    {
+        "label": "QBrush",
+        "importPath": "PySide6.QtGui",
+        "description": "PySide6.QtGui",
+        "isExtraImport": true,
+        "detail": "PySide6.QtGui",
+        "documentation": {}
+    },
+    {
+        "label": "QColor",
+        "importPath": "PySide6.QtGui",
+        "description": "PySide6.QtGui",
+        "isExtraImport": true,
+        "detail": "PySide6.QtGui",
+        "documentation": {}
+    },
+    {
+        "label": "QConicalGradient",
+        "importPath": "PySide6.QtGui",
+        "description": "PySide6.QtGui",
+        "isExtraImport": true,
+        "detail": "PySide6.QtGui",
+        "documentation": {}
+    },
+    {
+        "label": "QCursor",
+        "importPath": "PySide6.QtGui",
+        "description": "PySide6.QtGui",
+        "isExtraImport": true,
+        "detail": "PySide6.QtGui",
+        "documentation": {}
+    },
+    {
+        "label": "QFont",
+        "importPath": "PySide6.QtGui",
+        "description": "PySide6.QtGui",
+        "isExtraImport": true,
+        "detail": "PySide6.QtGui",
+        "documentation": {}
+    },
+    {
+        "label": "QFontDatabase",
+        "importPath": "PySide6.QtGui",
+        "description": "PySide6.QtGui",
+        "isExtraImport": true,
+        "detail": "PySide6.QtGui",
+        "documentation": {}
+    },
+    {
+        "label": "QGradient",
+        "importPath": "PySide6.QtGui",
+        "description": "PySide6.QtGui",
+        "isExtraImport": true,
+        "detail": "PySide6.QtGui",
+        "documentation": {}
+    },
+    {
+        "label": "QIcon",
+        "importPath": "PySide6.QtGui",
+        "description": "PySide6.QtGui",
+        "isExtraImport": true,
+        "detail": "PySide6.QtGui",
+        "documentation": {}
+    },
+    {
+        "label": "QImage",
+        "importPath": "PySide6.QtGui",
+        "description": "PySide6.QtGui",
+        "isExtraImport": true,
+        "detail": "PySide6.QtGui",
+        "documentation": {}
+    },
+    {
+        "label": "QKeySequence",
+        "importPath": "PySide6.QtGui",
+        "description": "PySide6.QtGui",
+        "isExtraImport": true,
+        "detail": "PySide6.QtGui",
+        "documentation": {}
+    },
+    {
+        "label": "QLinearGradient",
+        "importPath": "PySide6.QtGui",
+        "description": "PySide6.QtGui",
+        "isExtraImport": true,
+        "detail": "PySide6.QtGui",
+        "documentation": {}
+    },
+    {
+        "label": "QPainter",
+        "importPath": "PySide6.QtGui",
+        "description": "PySide6.QtGui",
+        "isExtraImport": true,
+        "detail": "PySide6.QtGui",
+        "documentation": {}
+    },
+    {
+        "label": "QPalette",
+        "importPath": "PySide6.QtGui",
+        "description": "PySide6.QtGui",
+        "isExtraImport": true,
+        "detail": "PySide6.QtGui",
+        "documentation": {}
+    },
+    {
+        "label": "QPixmap",
+        "importPath": "PySide6.QtGui",
+        "description": "PySide6.QtGui",
+        "isExtraImport": true,
+        "detail": "PySide6.QtGui",
+        "documentation": {}
+    },
+    {
+        "label": "QRadialGradient",
+        "importPath": "PySide6.QtGui",
+        "description": "PySide6.QtGui",
+        "isExtraImport": true,
+        "detail": "PySide6.QtGui",
+        "documentation": {}
+    },
+    {
+        "label": "QTransform",
+        "importPath": "PySide6.QtGui",
+        "description": "PySide6.QtGui",
+        "isExtraImport": true,
+        "detail": "PySide6.QtGui",
+        "documentation": {}
+    },
+    {
+        "label": "Ui_MainWindow",
+        "importPath": "main_running_files.ui_basic_calculator_app",
+        "description": "main_running_files.ui_basic_calculator_app",
+        "isExtraImport": true,
+        "detail": "main_running_files.ui_basic_calculator_app",
+        "documentation": {}
+    },
+    {
+        "label": "TrigMethods",
+        "importPath": "formulasAndFunctions.trig_methods",
+        "description": "formulasAndFunctions.trig_methods",
+        "isExtraImport": true,
+        "detail": "formulasAndFunctions.trig_methods",
+        "documentation": {}
+    },
+    {
+        "label": "Inverse",
+        "importPath": "formulasAndFunctions.trig_methods",
+        "description": "formulasAndFunctions.trig_methods",
+        "isExtraImport": true,
+        "detail": "formulasAndFunctions.trig_methods",
+        "documentation": {}
+    },
+    {
+        "label": "AdvancedBasicMethods",
+        "importPath": "formulasAndFunctions.advanced_basic_methods",
+        "description": "formulasAndFunctions.advanced_basic_methods",
+        "isExtraImport": true,
+        "detail": "formulasAndFunctions.advanced_basic_methods",
+        "documentation": {}
+    },
+    {
+        "label": "EssentialMethods",
+        "importPath": "formulasAndFunctions.advanced_basic_methods",
+        "description": "formulasAndFunctions.advanced_basic_methods",
+        "isExtraImport": true,
+        "detail": "formulasAndFunctions.advanced_basic_methods",
+        "documentation": {}
+    },
+    {
+        "label": "BasicFrequentFunctions",
+        "importPath": "formulasAndFunctions.basic_frequent_functions",
+        "description": "formulasAndFunctions.basic_frequent_functions",
+        "isExtraImport": true,
+        "detail": "formulasAndFunctions.basic_frequent_functions",
+        "documentation": {}
+    },
+    {
+        "label": "QLabel",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QLabel",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QApplication",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QMainWindow",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QApplication",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QFrame",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QGridLayout",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QHBoxLayout",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QLCDNumber",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QLabel",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QLineEdit",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QMainWindow",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QPushButton",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QScrollArea",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QSizePolicy",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QTabWidget",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QVBoxLayout",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QWidget",
+        "importPath": "PySide6.QtWidgets",
+        "description": "PySide6.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PySide6.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "*",
+        "importPath": "editing_actions_files.button_actions",
+        "description": "editing_actions_files.button_actions",
+        "isExtraImport": true,
+        "detail": "editing_actions_files.button_actions",
+        "documentation": {}
+    },
+    {
+        "label": "math",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "math",
+        "description": "math",
+        "detail": "math",
+        "documentation": {}
+    },
+    {
+        "label": "*",
+        "importPath": "editing_actions_files.solving",
+        "description": "editing_actions_files.solving",
+        "isExtraImport": true,
+        "detail": "editing_actions_files.solving",
+        "documentation": {}
+    },
+    {
+        "label": "sys",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "sys",
+        "description": "sys",
+        "detail": "sys",
+        "documentation": {}
+    },
+    {
+        "label": "QtCore",
+        "importPath": "PySide6",
+        "description": "PySide6",
+        "isExtraImport": true,
+        "detail": "PySide6",
+        "documentation": {}
+    },
+    {
+        "label": "QCoreApplication",
+        "importPath": "PySide6.QtCore",
+        "description": "PySide6.QtCore",
+        "isExtraImport": true,
+        "detail": "PySide6.QtCore",
+        "documentation": {}
+    },
+    {
+        "label": "QDate",
+        "importPath": "PySide6.QtCore",
+        "description": "PySide6.QtCore",
+        "isExtraImport": true,
+        "detail": "PySide6.QtCore",
+        "documentation": {}
+    },
+    {
+        "label": "QDateTime",
+        "importPath": "PySide6.QtCore",
+        "description": "PySide6.QtCore",
+        "isExtraImport": true,
+        "detail": "PySide6.QtCore",
+        "documentation": {}
+    },
+    {
+        "label": "QLocale",
+        "importPath": "PySide6.QtCore",
+        "description": "PySide6.QtCore",
+        "isExtraImport": true,
+        "detail": "PySide6.QtCore",
+        "documentation": {}
+    },
+    {
+        "label": "QMetaObject",
+        "importPath": "PySide6.QtCore",
+        "description": "PySide6.QtCore",
+        "isExtraImport": true,
+        "detail": "PySide6.QtCore",
+        "documentation": {}
+    },
+    {
+        "label": "QObject",
+        "importPath": "PySide6.QtCore",
+        "description": "PySide6.QtCore",
+        "isExtraImport": true,
+        "detail": "PySide6.QtCore",
+        "documentation": {}
+    },
+    {
+        "label": "QPoint",
+        "importPath": "PySide6.QtCore",
+        "description": "PySide6.QtCore",
+        "isExtraImport": true,
+        "detail": "PySide6.QtCore",
+        "documentation": {}
+    },
+    {
+        "label": "QRect",
+        "importPath": "PySide6.QtCore",
+        "description": "PySide6.QtCore",
+        "isExtraImport": true,
+        "detail": "PySide6.QtCore",
+        "documentation": {}
+    },
+    {
+        "label": "QSize",
+        "importPath": "PySide6.QtCore",
+        "description": "PySide6.QtCore",
+        "isExtraImport": true,
+        "detail": "PySide6.QtCore",
+        "documentation": {}
+    },
+    {
+        "label": "QTime",
+        "importPath": "PySide6.QtCore",
+        "description": "PySide6.QtCore",
+        "isExtraImport": true,
+        "detail": "PySide6.QtCore",
+        "documentation": {}
+    },
+    {
+        "label": "QUrl",
+        "importPath": "PySide6.QtCore",
+        "description": "PySide6.QtCore",
+        "isExtraImport": true,
+        "detail": "PySide6.QtCore",
+        "documentation": {}
+    },
+    {
+        "label": "Qt",
+        "importPath": "PySide6.QtCore",
+        "description": "PySide6.QtCore",
+        "isExtraImport": true,
+        "detail": "PySide6.QtCore",
+        "documentation": {}
+    },
+    {
+        "label": "my_calc_icons_rc",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "my_calc_icons_rc",
+        "description": "my_calc_icons_rc",
+        "detail": "my_calc_icons_rc",
+        "documentation": {}
+    },
+    {
+        "label": "runpy",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "runpy",
+        "description": "runpy",
+        "detail": "runpy",
+        "documentation": {}
+    },
+    {
+        "label": "annotations",
+        "importPath": "__future__",
+        "description": "__future__",
+        "isExtraImport": true,
+        "detail": "__future__",
+        "documentation": {}
+    },
+    {
+        "label": "os",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "site",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "site",
+        "description": "site",
+        "detail": "site",
+        "documentation": {}
+    },
+    {
+        "label": "ButtonActions",
+        "kind": 6,
+        "importPath": "editing_actions_files.button_actions",
+        "description": "editing_actions_files.button_actions",
+        "peekOfCode": "class ButtonActions(Ui_MainWindow):\n    def __init__(self):\n        super().__init__()\n        self.operator = \"\"\n        self.val_1 = \"\"\n        self.val_2 = \"\"\n        self.answer = \"\"\n        my_font = QFont()\n        my_font.setPointSize(10)\n        my_font.setBold(True)",
+        "detail": "editing_actions_files.button_actions",
+        "documentation": {}
+    },
+    {
+        "label": "print_hi",
+        "kind": 2,
+        "importPath": "editing_actions_files.main",
+        "description": "editing_actions_files.main",
+        "peekOfCode": "def print_hi(name):\n    # Use a breakpoint in the code line below to debug your script.\n    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.\n# Press the green button in the gutter to run the script.\nif __name__ == '__main__':\n    print_hi('PyCharm')\n# See PyCharm help at https://www.jetbrains.com/help/pycharm/",
+        "detail": "editing_actions_files.main",
+        "documentation": {}
+    },
+    {
+        "label": "Solving",
+        "kind": 6,
+        "importPath": "editing_actions_files.solving",
+        "description": "editing_actions_files.solving",
+        "peekOfCode": "class Solving(ButtonActions):\n    operator = \"\"\n    val_1 = \"\"\n    val_2 = \"\"\n    answer = \"\"\n    position = 0\n    def one(self):\n        if self.number_input.text() == \"0\" or self.number_input.text() == \"\":\n            self.number_input.setText(f\"1\")\n        else:",
+        "detail": "editing_actions_files.solving",
+        "documentation": {}
+    },
+    {
+        "label": "AdvancedBasicMethods",
+        "kind": 6,
+        "importPath": "formulasAndFunctions.advanced_basic_methods",
+        "description": "formulasAndFunctions.advanced_basic_methods",
+        "peekOfCode": "class AdvancedBasicMethods:\n    @staticmethod\n    def factorial(n:int):\n        ans =1\n        for number in range(1 , int(n+1)):\n            ans *= number\n        return ans\n    def permutate(self, n:int, r:int):\n        total_num = self.factorial(n)\n        item_needed = self.factorial(n - r)",
+        "detail": "formulasAndFunctions.advanced_basic_methods",
+        "documentation": {}
+    },
+    {
+        "label": "EssentialMethods",
+        "kind": 6,
+        "importPath": "formulasAndFunctions.advanced_basic_methods",
+        "description": "formulasAndFunctions.advanced_basic_methods",
+        "peekOfCode": "class EssentialMethods:\n    @staticmethod\n    def mod_rem(base_num:float, divisor:float): return int(base_num % divisor)\n    @staticmethod\n    def mod_whole(base_num:float, divisor:float): return int(base_num // divisor)",
+        "detail": "formulasAndFunctions.advanced_basic_methods",
+        "documentation": {}
+    },
+    {
+        "label": "BasicFrequentFunctions",
+        "kind": 6,
+        "importPath": "formulasAndFunctions.basic_frequent_functions",
+        "description": "formulasAndFunctions.basic_frequent_functions",
+        "peekOfCode": "class BasicFrequentFunctions:\n    #done\n    @staticmethod\n    def add(num1: float, num2: float): return num1 + num2\n    #done\n    @staticmethod\n    def difference(num1: float, num2: float): return num1 - num2\n    #done\n    @staticmethod\n    def multiply(num1: float, num2: float): return num1 * num2",
+        "detail": "formulasAndFunctions.basic_frequent_functions",
+        "documentation": {}
+    },
+    {
+        "label": "TrigMethods",
+        "kind": 6,
+        "importPath": "formulasAndFunctions.trig_methods",
+        "description": "formulasAndFunctions.trig_methods",
+        "peekOfCode": "class TrigMethods(EssentialMethods):\n    def sine(self, angle:float):\n        if self.mod_rem(angle, 360) == 30:\n            return (1/2)\n        elif self.mod_rem(angle, 360) == 0:\n            return 0.0\n        elif self.mod_rem(angle, 360) == 90:\n            return 1.0\n        elif self.mod_rem(angle, 360) == 180:\n            return 0.0",
+        "detail": "formulasAndFunctions.trig_methods",
+        "documentation": {}
+    },
+    {
+        "label": "Inverse",
+        "kind": 6,
+        "importPath": "formulasAndFunctions.trig_methods",
+        "description": "formulasAndFunctions.trig_methods",
+        "peekOfCode": "class Inverse:\n    @staticmethod\n    def arc_sine(num: float):\n        try:\n            result = math.asin(num)\n            result_in_degrees = math.degrees(result)\n            return result_in_degrees\n        except ValueError:\n            return f\"Number: {num},Out of Range\"\n    @staticmethod",
+        "detail": "formulasAndFunctions.trig_methods",
+        "documentation": {}
+    },
+    {
+        "label": "CalculatorFirst",
+        "kind": 6,
+        "importPath": "main_running_files.calculator_first",
+        "description": "main_running_files.calculator_first",
+        "peekOfCode": "class CalculatorFirst( QMainWindow, Solving):\n    def __init__(self):\n        super(CalculatorFirst, self).__init__()\n        self.setupUi(self)\n        self.setWindowIcon(QIcon(\"calc_icon.jpg\"))\n        self.pushButton_permutation.setText(f\"P\\u207F\\u1D63\")\n        self.pushButton_combination.setText(f\"C\\u207F\\u1D63\")\n        self.pushButton_cube_root.setText(f\"\\u00B3\\u221Ay\")\n        self.pushButton_square_root.setText(f\"\\u00B2\\u221Ay\")\n        self.pushButton_square.setText(f\"y\\u00B2\")",
+        "detail": "main_running_files.calculator_first",
+        "documentation": {}
+    },
+    {
+        "label": "app",
+        "kind": 5,
+        "importPath": "main_running_files.calculator_first",
+        "description": "main_running_files.calculator_first",
+        "peekOfCode": "app = QApplication()\nwindow = CalculatorFirst()\nwindow.show()\nsys.exit(app.exec())",
+        "detail": "main_running_files.calculator_first",
+        "documentation": {}
+    },
+    {
+        "label": "window",
+        "kind": 5,
+        "importPath": "main_running_files.calculator_first",
+        "description": "main_running_files.calculator_first",
+        "peekOfCode": "window = CalculatorFirst()\nwindow.show()\nsys.exit(app.exec())",
+        "detail": "main_running_files.calculator_first",
+        "documentation": {}
+    },
+    {
+        "label": "qInitResources",
+        "kind": 2,
+        "importPath": "main_running_files.my_calc_icons_rc",
+        "description": "main_running_files.my_calc_icons_rc",
+        "peekOfCode": "def qInitResources():\n    QtCore.qRegisterResourceData(0x03, qt_resource_struct, qt_resource_name, qt_resource_data)\ndef qCleanupResources():\n    QtCore.qUnregisterResourceData(0x03, qt_resource_struct, qt_resource_name, qt_resource_data)\nqInitResources()",
+        "detail": "main_running_files.my_calc_icons_rc",
+        "documentation": {}
+    },
+    {
+        "label": "qCleanupResources",
+        "kind": 2,
+        "importPath": "main_running_files.my_calc_icons_rc",
+        "description": "main_running_files.my_calc_icons_rc",
+        "peekOfCode": "def qCleanupResources():\n    QtCore.qUnregisterResourceData(0x03, qt_resource_struct, qt_resource_name, qt_resource_data)\nqInitResources()",
+        "detail": "main_running_files.my_calc_icons_rc",
+        "documentation": {}
+    },
+    {
+        "label": "qt_resource_data",
+        "kind": 5,
+        "importPath": "main_running_files.my_calc_icons_rc",
+        "description": "main_running_files.my_calc_icons_rc",
+        "peekOfCode": "qt_resource_data = b\"\\\n\\x00\\x00G\\x91\\\n\\xff\\\n\\xd8\\xff\\xe1\\x00\\xf3Exif\\x00\\x00MM\\x00*\\x00\\\n\\x00\\x00\\x08\\x00\\x03\\x012\\x00\\x02\\x00\\x00\\x00\\x14\\x00\\x00\\x00\\\n2\\x87i\\x00\\x04\\x00\\x00\\x00\\x01\\x00\\x00\\x00F\\x88%\\x00\\\n\\x04\\x00\\x00\\x00\\x01\\x00\\x00\\x00\\xaa\\x00\\x00\\x00\\x00202\\\n4:12:06 19:51:12\\\n\\x00\\x00\\x05\\x90\\x03\\x00\\x02\\x00\\x00\\x00\\x14\\x00\\x00\\x00\\x88\\x92\\\n\\x91\\x00\\x02\\x00\\x00\\x00\\x04177\\x00\\x90\\x11\\x00\\x02\\x00\\",
+        "detail": "main_running_files.my_calc_icons_rc",
+        "documentation": {}
+    },
+    {
+        "label": "qt_resource_name",
+        "kind": 5,
+        "importPath": "main_running_files.my_calc_icons_rc",
+        "description": "main_running_files.my_calc_icons_rc",
+        "peekOfCode": "qt_resource_name = b\"\\\n\\x00\\x07\\\n\\x04\\xdf\\xa6\\xb3\\\n\\x00m\\\n\\x00y\\x00I\\x00c\\x00o\\x00n\\x00s\\\n\\x00\\x0d\\\n\\x0dd{'\\\n\\x00c\\\n\\x00a\\x00l\\x00c\\x00_\\x00i\\x00c\\x00o\\x00n\\x00.\\x00j\\x00p\\x00g\\\n\\x00\\x0f\\",
+        "detail": "main_running_files.my_calc_icons_rc",
+        "documentation": {}
+    },
+    {
+        "label": "qt_resource_struct",
+        "kind": 5,
+        "importPath": "main_running_files.my_calc_icons_rc",
+        "description": "main_running_files.my_calc_icons_rc",
+        "peekOfCode": "qt_resource_struct = b\"\\\n\\x00\\x00\\x00\\x00\\x00\\x02\\x00\\x00\\x00\\x01\\x00\\x00\\x00\\x01\\\n\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\\n\\x00\\x00\\x00\\x00\\x00\\x02\\x00\\x00\\x00\\x06\\x00\\x00\\x00\\x02\\\n\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\\n\\x00\\x00\\x00z\\x00\\x00\\x00\\x00\\x00\\x01\\x00\\x00x2\\\n\\x00\\x00\\x01\\x99\\xbf\\xd0J\\xf8\\\n\\x00\\x00\\x00\\xa2\\x00\\x00\\x00\\x00\\x00\\x01\\x00\\x00\\x93\\xea\\\n\\x00\\x00\\x01\\x99\\xbf\\xd4]\\xf0\\\n\\x00\\x00\\x00\\xc8\\x00\\x00\\x00\\x00\\x00\\x01\\x00\\x00\\xc1<\\",
+        "detail": "main_running_files.my_calc_icons_rc",
+        "documentation": {}
+    },
+    {
+        "label": "Ui_MainWindow",
+        "kind": 6,
+        "importPath": "main_running_files.ui_basic_calculator_app",
+        "description": "main_running_files.ui_basic_calculator_app",
+        "peekOfCode": "class Ui_MainWindow(object):\n    def setupUi(self, MainWindow):\n        if not MainWindow.objectName():\n            MainWindow.setObjectName(u\"MainWindow\")\n        MainWindow.resize(931, 551)\n        MainWindow.setMinimumSize(QSize(440, 467))\n        MainWindow.setMaximumSize(QSize(16777215, 16777215))\n        MainWindow.setStyleSheet(u\"\\n\"\n\"background-color: rgb(170, 170, 127);\\n\"\n\"\\n\"",
+        "detail": "main_running_files.ui_basic_calculator_app",
+        "documentation": {}
+    },
+    {
+        "label": "bin_dir",
+        "kind": 5,
+        "importPath": "venv.Scripts.activate_this",
+        "description": "venv.Scripts.activate_this",
+        "peekOfCode": "bin_dir = os.path.dirname(abs_file)\nbase = bin_dir[: -len('Scripts') - 1]  # strip away the bin part from the __file__, plus the path separator\n# prepend bin to PATH (this file is inside the bin directory)\nos.environ[\"PATH\"] = os.pathsep.join([bin_dir, *os.environ.get(\"PATH\", \"\").split(os.pathsep)])\nos.environ[\"VIRTUAL_ENV\"] = base  # virtual env is right above bin directory\nos.environ[\"VIRTUAL_ENV_PROMPT\"] = '' or os.path.basename(base)\n# add the virtual environments libraries to the host python import mechanism\nprev_length = len(sys.path)\nfor lib in '..\\\\Lib\\\\site-packages'.split(os.pathsep):\n    path = os.path.realpath(os.path.join(bin_dir, lib))",
+        "detail": "venv.Scripts.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "base",
+        "kind": 5,
+        "importPath": "venv.Scripts.activate_this",
+        "description": "venv.Scripts.activate_this",
+        "peekOfCode": "base = bin_dir[: -len('Scripts') - 1]  # strip away the bin part from the __file__, plus the path separator\n# prepend bin to PATH (this file is inside the bin directory)\nos.environ[\"PATH\"] = os.pathsep.join([bin_dir, *os.environ.get(\"PATH\", \"\").split(os.pathsep)])\nos.environ[\"VIRTUAL_ENV\"] = base  # virtual env is right above bin directory\nos.environ[\"VIRTUAL_ENV_PROMPT\"] = '' or os.path.basename(base)\n# add the virtual environments libraries to the host python import mechanism\nprev_length = len(sys.path)\nfor lib in '..\\\\Lib\\\\site-packages'.split(os.pathsep):\n    path = os.path.realpath(os.path.join(bin_dir, lib))\n    site.addsitedir(path.decode(\"utf-8\") if '' else path)",
+        "detail": "venv.Scripts.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "os.environ[\"PATH\"]",
+        "kind": 5,
+        "importPath": "venv.Scripts.activate_this",
+        "description": "venv.Scripts.activate_this",
+        "peekOfCode": "os.environ[\"PATH\"] = os.pathsep.join([bin_dir, *os.environ.get(\"PATH\", \"\").split(os.pathsep)])\nos.environ[\"VIRTUAL_ENV\"] = base  # virtual env is right above bin directory\nos.environ[\"VIRTUAL_ENV_PROMPT\"] = '' or os.path.basename(base)\n# add the virtual environments libraries to the host python import mechanism\nprev_length = len(sys.path)\nfor lib in '..\\\\Lib\\\\site-packages'.split(os.pathsep):\n    path = os.path.realpath(os.path.join(bin_dir, lib))\n    site.addsitedir(path.decode(\"utf-8\") if '' else path)\nsys.path[:] = sys.path[prev_length:] + sys.path[0:prev_length]\nsys.real_prefix = sys.prefix",
+        "detail": "venv.Scripts.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "os.environ[\"VIRTUAL_ENV\"]",
+        "kind": 5,
+        "importPath": "venv.Scripts.activate_this",
+        "description": "venv.Scripts.activate_this",
+        "peekOfCode": "os.environ[\"VIRTUAL_ENV\"] = base  # virtual env is right above bin directory\nos.environ[\"VIRTUAL_ENV_PROMPT\"] = '' or os.path.basename(base)\n# add the virtual environments libraries to the host python import mechanism\nprev_length = len(sys.path)\nfor lib in '..\\\\Lib\\\\site-packages'.split(os.pathsep):\n    path = os.path.realpath(os.path.join(bin_dir, lib))\n    site.addsitedir(path.decode(\"utf-8\") if '' else path)\nsys.path[:] = sys.path[prev_length:] + sys.path[0:prev_length]\nsys.real_prefix = sys.prefix\nsys.prefix = base",
+        "detail": "venv.Scripts.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "os.environ[\"VIRTUAL_ENV_PROMPT\"]",
+        "kind": 5,
+        "importPath": "venv.Scripts.activate_this",
+        "description": "venv.Scripts.activate_this",
+        "peekOfCode": "os.environ[\"VIRTUAL_ENV_PROMPT\"] = '' or os.path.basename(base)\n# add the virtual environments libraries to the host python import mechanism\nprev_length = len(sys.path)\nfor lib in '..\\\\Lib\\\\site-packages'.split(os.pathsep):\n    path = os.path.realpath(os.path.join(bin_dir, lib))\n    site.addsitedir(path.decode(\"utf-8\") if '' else path)\nsys.path[:] = sys.path[prev_length:] + sys.path[0:prev_length]\nsys.real_prefix = sys.prefix\nsys.prefix = base",
+        "detail": "venv.Scripts.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "prev_length",
+        "kind": 5,
+        "importPath": "venv.Scripts.activate_this",
+        "description": "venv.Scripts.activate_this",
+        "peekOfCode": "prev_length = len(sys.path)\nfor lib in '..\\\\Lib\\\\site-packages'.split(os.pathsep):\n    path = os.path.realpath(os.path.join(bin_dir, lib))\n    site.addsitedir(path.decode(\"utf-8\") if '' else path)\nsys.path[:] = sys.path[prev_length:] + sys.path[0:prev_length]\nsys.real_prefix = sys.prefix\nsys.prefix = base",
+        "detail": "venv.Scripts.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "sys.path[:]",
+        "kind": 5,
+        "importPath": "venv.Scripts.activate_this",
+        "description": "venv.Scripts.activate_this",
+        "peekOfCode": "sys.path[:] = sys.path[prev_length:] + sys.path[0:prev_length]\nsys.real_prefix = sys.prefix\nsys.prefix = base",
+        "detail": "venv.Scripts.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "sys.real_prefix",
+        "kind": 5,
+        "importPath": "venv.Scripts.activate_this",
+        "description": "venv.Scripts.activate_this",
+        "peekOfCode": "sys.real_prefix = sys.prefix\nsys.prefix = base",
+        "detail": "venv.Scripts.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "sys.prefix",
+        "kind": 5,
+        "importPath": "venv.Scripts.activate_this",
+        "description": "venv.Scripts.activate_this",
+        "peekOfCode": "sys.prefix = base",
+        "detail": "venv.Scripts.activate_this",
+        "documentation": {}
+    }
+]
