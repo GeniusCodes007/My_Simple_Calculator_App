@@ -4,7 +4,6 @@ from main_running_files.ui_basic_calculator_app import Ui_MainWindow
 from formulasAndFunctions.trig_methods import TrigMethods, Inverse
 from formulasAndFunctions.advanced_basic_methods import AdvancedBasicMethods
 from formulasAndFunctions.basic_frequent_functions import BasicFrequentFunctions
-from PySide6.QtWidgets import QLabel
 
 
 
@@ -163,6 +162,11 @@ class ButtonActions(Ui_MainWindow):
         
         self.pushButton_dot.setEnabled(True)
 
+    def permutate_button(self):
+        pass
+
+    def combine_button(self):
+        pass
 
 
 #NOT YET TOUCHED
