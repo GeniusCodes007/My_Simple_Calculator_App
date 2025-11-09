@@ -95,6 +95,10 @@ class Solving(ButtonActions):
 
             elif self.operator == "r": self.answer = AdvancedBasicMethods().roots(self.val_1, int(self.val_2))
 
+            elif self.operator == "p": self.answer = AdvancedBasicMethods().permutate(int(self.val_1), int(self.val_2))
+
+            elif self.operator == "c": self.answer = AdvancedBasicMethods().combine(int(self.val_1), int(self.val_2))
+
             my_font = QFont()
             my_font.setPointSize(10)
             my_font.setBold(True)

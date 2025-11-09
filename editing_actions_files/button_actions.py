@@ -94,6 +94,24 @@ class ButtonActions(Ui_MainWindow):
         self.number_input.setText(F"0")
         self.pushButton_dot.setEnabled(True)
 
+    def permutate_button(self):
+        self.operator = "p"
+        if self.input_display.text() == "0" or self.input_display.text() == "":
+            self.input_display.setText(f"{self.number_input.text()} {self.operator}")
+        else:
+            self.input_display.setText(F"{self.input_display.text()} {self.operator}")
+        self.number_input.setText(F"0")
+        self.pushButton_dot.setEnabled(True)
+
+    def combine_button(self):
+        self.operator = "c"
+        if self.input_display.text() == "0" or self.input_display.text() == "":
+            self.input_display.setText(f"{self.number_input.text()} {self.operator}")
+        else:
+            self.input_display.setText(F"{self.input_display.text()} {self.operator}")
+        self.number_input.setText(F"0")
+        self.pushButton_dot.setEnabled(True)
+
 #More Complex Buttons Operations
     def cube_button(self):
         if self.input_display.text() == "0" or self.input_display.text() == "":
@@ -162,11 +180,6 @@ class ButtonActions(Ui_MainWindow):
         
         self.pushButton_dot.setEnabled(True)
 
-    def permutate_button(self):
-        pass
-
-    def combine_button(self):
-        pass
 
 
 #NOT YET TOUCHED
