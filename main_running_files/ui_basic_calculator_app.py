@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'basic_calculator_appAfBNgT.ui'
+## Form generated from reading UI file 'basic_calculator_appjdZzxw.ui'
 ##
 ## Created by: Qt User Interface Compiler version 6.9.2
 ##
@@ -36,11 +36,11 @@ class Ui_MainWindow(object):
         MainWindow.setIconSize(QSize(30, 24))
         MainWindow.setTabShape(QTabWidget.TabShape.Rounded)
         MainWindow.setDockNestingEnabled(True)
-        self.centralwidget = QWidget(MainWindow)
-        self.centralwidget.setObjectName(u"centralwidget")
-        self.horizontalLayout_7 = QHBoxLayout(self.centralwidget)
+        self.central_widget = QWidget(MainWindow)
+        self.central_widget.setObjectName(u"central_widget")
+        self.horizontalLayout_7 = QHBoxLayout(self.central_widget)
         self.horizontalLayout_7.setObjectName(u"horizontalLayout_7")
-        self.mainCalculatorFrame = QFrame(self.centralwidget)
+        self.mainCalculatorFrame = QFrame(self.central_widget)
         self.mainCalculatorFrame.setObjectName(u"mainCalculatorFrame")
         self.mainCalculatorFrame.setMinimumSize(QSize(694, 533))
         self.mainCalculatorFrame.setMaximumSize(QSize(1000, 1000))
@@ -127,14 +127,23 @@ class Ui_MainWindow(object):
         self.firstRowFrame.setFrameShadow(QFrame.Shadow.Raised)
         self.horizontalLayout_8 = QHBoxLayout(self.firstRowFrame)
         self.horizontalLayout_8.setObjectName(u"horizontalLayout_8")
-        self.pushButton_permutation = QPushButton(self.firstRowFrame)
-        self.pushButton_permutation.setObjectName(u"pushButton_permutation")
-        self.pushButton_permutation.setMinimumSize(QSize(61, 41))
-        self.pushButton_permutation.setMaximumSize(QSize(16777215, 16777215))
+        self.show_history = QPushButton(self.firstRowFrame)
+        self.show_history.setObjectName(u"show_history")
+        self.show_history.setMinimumSize(QSize(61, 41))
+        self.show_history.setMaximumSize(QSize(16777215, 16777215))
         font2 = QFont()
         font2.setPointSize(17)
         font2.setBold(True)
         font2.setItalic(True)
+        self.show_history.setFont(font2)
+        self.show_history.setStyleSheet(u"background-color: rgb(85, 170, 255);")
+
+        self.horizontalLayout_8.addWidget(self.show_history)
+
+        self.pushButton_permutation = QPushButton(self.firstRowFrame)
+        self.pushButton_permutation.setObjectName(u"pushButton_permutation")
+        self.pushButton_permutation.setMinimumSize(QSize(61, 41))
+        self.pushButton_permutation.setMaximumSize(QSize(16777215, 16777215))
         self.pushButton_permutation.setFont(font2)
         self.pushButton_permutation.setStyleSheet(u"background-color: rgb(85, 170, 255);")
         self.pushButton_permutation.setIconSize(QSize(25, 25))
@@ -294,14 +303,14 @@ class Ui_MainWindow(object):
 
         self.verticalLayout_2.addWidget(self.thirdRowFrame)
 
-        self.fourthRowFframe = QFrame(self.buttonHousingFrame)
-        self.fourthRowFframe.setObjectName(u"fourthRowFframe")
-        self.fourthRowFframe.setMinimumSize(QSize(652, 58))
-        self.fourthRowFframe.setFrameShape(QFrame.Shape.Box)
-        self.fourthRowFframe.setFrameShadow(QFrame.Shadow.Raised)
-        self.horizontalLayout_3 = QHBoxLayout(self.fourthRowFframe)
+        self.fourthRowFrame = QFrame(self.buttonHousingFrame)
+        self.fourthRowFrame.setObjectName(u"fourthRowFrame")
+        self.fourthRowFrame.setMinimumSize(QSize(652, 58))
+        self.fourthRowFrame.setFrameShape(QFrame.Shape.Box)
+        self.fourthRowFrame.setFrameShadow(QFrame.Shadow.Raised)
+        self.horizontalLayout_3 = QHBoxLayout(self.fourthRowFrame)
         self.horizontalLayout_3.setObjectName(u"horizontalLayout_3")
-        self.pushButton_seven = QPushButton(self.fourthRowFframe)
+        self.pushButton_seven = QPushButton(self.fourthRowFrame)
         self.pushButton_seven.setObjectName(u"pushButton_seven")
         self.pushButton_seven.setMinimumSize(QSize(61, 41))
         self.pushButton_seven.setMaximumSize(QSize(16777215, 16777215))
@@ -310,7 +319,7 @@ class Ui_MainWindow(object):
 
         self.horizontalLayout_3.addWidget(self.pushButton_seven)
 
-        self.pushButton_eight = QPushButton(self.fourthRowFframe)
+        self.pushButton_eight = QPushButton(self.fourthRowFrame)
         self.pushButton_eight.setObjectName(u"pushButton_eight")
         self.pushButton_eight.setMinimumSize(QSize(61, 41))
         self.pushButton_eight.setMaximumSize(QSize(16777215, 16777215))
@@ -319,7 +328,7 @@ class Ui_MainWindow(object):
 
         self.horizontalLayout_3.addWidget(self.pushButton_eight)
 
-        self.pushButton_nine = QPushButton(self.fourthRowFframe)
+        self.pushButton_nine = QPushButton(self.fourthRowFrame)
         self.pushButton_nine.setObjectName(u"pushButton_nine")
         self.pushButton_nine.setMinimumSize(QSize(61, 41))
         self.pushButton_nine.setMaximumSize(QSize(16777215, 16777215))
@@ -328,7 +337,7 @@ class Ui_MainWindow(object):
 
         self.horizontalLayout_3.addWidget(self.pushButton_nine)
 
-        self.pushButton_divide = QPushButton(self.fourthRowFframe)
+        self.pushButton_divide = QPushButton(self.fourthRowFrame)
         self.pushButton_divide.setObjectName(u"pushButton_divide")
         self.pushButton_divide.setMinimumSize(QSize(61, 41))
         self.pushButton_divide.setMaximumSize(QSize(16777215, 16777215))
@@ -337,7 +346,7 @@ class Ui_MainWindow(object):
 
         self.horizontalLayout_3.addWidget(self.pushButton_divide)
 
-        self.pushButton_cube_root = QPushButton(self.fourthRowFframe)
+        self.pushButton_cube_root = QPushButton(self.fourthRowFrame)
         self.pushButton_cube_root.setObjectName(u"pushButton_cube_root")
         self.pushButton_cube_root.setMinimumSize(QSize(61, 41))
         self.pushButton_cube_root.setMaximumSize(QSize(16777215, 16777215))
@@ -347,7 +356,7 @@ class Ui_MainWindow(object):
         self.horizontalLayout_3.addWidget(self.pushButton_cube_root)
 
 
-        self.verticalLayout_2.addWidget(self.fourthRowFframe)
+        self.verticalLayout_2.addWidget(self.fourthRowFrame)
 
         self.fifthRowFrame = QFrame(self.buttonHousingFrame)
         self.fifthRowFrame.setObjectName(u"fifthRowFrame")
@@ -520,7 +529,7 @@ class Ui_MainWindow(object):
 
         self.horizontalLayout_7.addWidget(self.mainCalculatorFrame)
 
-        self.historyFrame = QFrame(self.centralwidget)
+        self.historyFrame = QFrame(self.central_widget)
         self.historyFrame.setObjectName(u"historyFrame")
         self.historyFrame.setMinimumSize(QSize(211, 501))
         self.historyFrame.setMaximumSize(QSize(270, 1000))
@@ -584,7 +593,7 @@ class Ui_MainWindow(object):
         self.scrollArea.setWidgetResizable(True)
         self.scrollAreaWidgetContents = QWidget()
         self.scrollAreaWidgetContents.setObjectName(u"scrollAreaWidgetContents")
-        self.scrollAreaWidgetContents.setGeometry(QRect(-141, 0, 318, 422))
+        self.scrollAreaWidgetContents.setGeometry(QRect(0, -29, 318, 422))
         self.verticalLayout_4 = QVBoxLayout(self.scrollAreaWidgetContents)
         self.verticalLayout_4.setObjectName(u"verticalLayout_4")
         self.historyWidget = QWidget(self.scrollAreaWidgetContents)
@@ -594,59 +603,69 @@ class Ui_MainWindow(object):
         self.verticalLayout_5.setObjectName(u"verticalLayout_5")
         self.gridLayout = QGridLayout()
         self.gridLayout.setObjectName(u"gridLayout")
-        self.history_label_2 = QLabel(self.historyWidget)
-        self.history_label_2.setObjectName(u"history_label_2")
-
-        self.gridLayout.addWidget(self.history_label_2, 1, 0, 1, 1)
-
-        self.history_label_7 = QLabel(self.historyWidget)
-        self.history_label_7.setObjectName(u"history_label_7")
-
-        self.gridLayout.addWidget(self.history_label_7, 6, 0, 1, 1)
-
-        self.history_label_8 = QLabel(self.historyWidget)
-        self.history_label_8.setObjectName(u"history_label_8")
-
-        self.gridLayout.addWidget(self.history_label_8, 7, 0, 1, 1)
-
-        self.history_label_9 = QLabel(self.historyWidget)
-        self.history_label_9.setObjectName(u"history_label_9")
-
-        self.gridLayout.addWidget(self.history_label_9, 8, 0, 1, 1)
-
-        self.history_label_6 = QLabel(self.historyWidget)
-        self.history_label_6.setObjectName(u"history_label_6")
-
-        self.gridLayout.addWidget(self.history_label_6, 5, 0, 1, 1)
-
-        self.history_label_5 = QLabel(self.historyWidget)
-        self.history_label_5.setObjectName(u"history_label_5")
-
-        self.gridLayout.addWidget(self.history_label_5, 4, 0, 1, 1)
-
-        self.history_label_3 = QLabel(self.historyWidget)
-        self.history_label_3.setObjectName(u"history_label_3")
-
-        self.gridLayout.addWidget(self.history_label_3, 2, 0, 1, 1)
-
         self.history_label_1 = QLabel(self.historyWidget)
         self.history_label_1.setObjectName(u"history_label_1")
         font5 = QFont()
+        font5.setPointSize(10)
         font5.setBold(True)
         font5.setItalic(True)
         self.history_label_1.setFont(font5)
 
-        self.gridLayout.addWidget(self.history_label_1, 0, 0, 1, 1)
+        self.gridLayout.addWidget(self.history_label_1, 1, 0, 1, 1)
+
+        self.history_label_6 = QLabel(self.historyWidget)
+        self.history_label_6.setObjectName(u"history_label_6")
+        self.history_label_6.setFont(font5)
+
+        self.gridLayout.addWidget(self.history_label_6, 6, 0, 1, 1)
+
+        self.history_label_7 = QLabel(self.historyWidget)
+        self.history_label_7.setObjectName(u"history_label_7")
+        self.history_label_7.setFont(font5)
+
+        self.gridLayout.addWidget(self.history_label_7, 7, 0, 1, 1)
+
+        self.history_label_8 = QLabel(self.historyWidget)
+        self.history_label_8.setObjectName(u"history_label_8")
+        self.history_label_8.setFont(font5)
+
+        self.gridLayout.addWidget(self.history_label_8, 8, 0, 1, 1)
+
+        self.history_label_5 = QLabel(self.historyWidget)
+        self.history_label_5.setObjectName(u"history_label_5")
+        self.history_label_5.setFont(font5)
+
+        self.gridLayout.addWidget(self.history_label_5, 5, 0, 1, 1)
 
         self.history_label_4 = QLabel(self.historyWidget)
         self.history_label_4.setObjectName(u"history_label_4")
+        self.history_label_4.setFont(font5)
 
-        self.gridLayout.addWidget(self.history_label_4, 3, 0, 1, 1)
+        self.gridLayout.addWidget(self.history_label_4, 4, 0, 1, 1)
 
-        self.history_label_10 = QLabel(self.historyWidget)
-        self.history_label_10.setObjectName(u"history_label_10")
+        self.history_label_2 = QLabel(self.historyWidget)
+        self.history_label_2.setObjectName(u"history_label_2")
+        self.history_label_2.setFont(font5)
 
-        self.gridLayout.addWidget(self.history_label_10, 9, 0, 1, 1)
+        self.gridLayout.addWidget(self.history_label_2, 2, 0, 1, 1)
+
+        self.history_label_0 = QLabel(self.historyWidget)
+        self.history_label_0.setObjectName(u"history_label_0")
+        self.history_label_0.setFont(font5)
+
+        self.gridLayout.addWidget(self.history_label_0, 0, 0, 1, 1)
+
+        self.history_label_3 = QLabel(self.historyWidget)
+        self.history_label_3.setObjectName(u"history_label_3")
+        self.history_label_3.setFont(font5)
+
+        self.gridLayout.addWidget(self.history_label_3, 3, 0, 1, 1)
+
+        self.history_label_9 = QLabel(self.historyWidget)
+        self.history_label_9.setObjectName(u"history_label_9")
+        self.history_label_9.setFont(font5)
+
+        self.gridLayout.addWidget(self.history_label_9, 9, 0, 1, 1)
 
 
         self.verticalLayout_5.addLayout(self.gridLayout)
@@ -661,7 +680,7 @@ class Ui_MainWindow(object):
 
         self.horizontalLayout_7.addWidget(self.historyFrame)
 
-        MainWindow.setCentralWidget(self.centralwidget)
+        MainWindow.setCentralWidget(self.central_widget)
 
         self.retranslateUi(MainWindow)
 
@@ -671,6 +690,7 @@ class Ui_MainWindow(object):
     def retranslateUi(self, MainWindow):
         MainWindow.setWindowTitle(QCoreApplication.translate("MainWindow", u"Simple Calculator", None))
         self.number_input.setText("")
+        self.show_history.setText("")
         self.pushButton_permutation.setText("")
         self.pushButton_combination.setText("")
         self.pushButton_factorial.setText("")
@@ -760,15 +780,15 @@ class Ui_MainWindow(object):
         self.pushButton_hide.setText(QCoreApplication.translate("MainWindow", u"Hide", None))
         self.pushButton_clear_history.setText(QCoreApplication.translate("MainWindow", u"Clear History", None))
         self.historyLabel.setText(QCoreApplication.translate("MainWindow", u"History", None))
-        self.history_label_2.setText("")
+        self.history_label_1.setText("")
+        self.history_label_6.setText("")
         self.history_label_7.setText("")
         self.history_label_8.setText("")
-        self.history_label_9.setText("")
-        self.history_label_6.setText("")
         self.history_label_5.setText("")
-        self.history_label_3.setText("")
-        self.history_label_1.setText("")
         self.history_label_4.setText("")
-        self.history_label_10.setText("")
+        self.history_label_2.setText("")
+        self.history_label_0.setText("")
+        self.history_label_3.setText("")
+        self.history_label_9.setText("")
     # retranslateUi
 

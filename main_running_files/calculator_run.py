@@ -1,4 +1,3 @@
-
 from editing_actions_files.solving import *
 from PySide6.QtWidgets import QApplication,QMainWindow
 from PySide6.QtGui import QIcon
@@ -9,7 +8,7 @@ class CalculatorFirst( QMainWindow, Solving):
         self.setupUi(self)
 
         self.setWindowIcon(QIcon("calc_icon.jpg"))
-        
+
         self.pushButton_permutation.setText(f"P\u207F\u1D63")
         self.pushButton_combination.setText(f"C\u207F\u1D63")
         self.pushButton_cube_root.setText(f"\u00B3\u221Ay")
@@ -29,9 +28,9 @@ class CalculatorFirst( QMainWindow, Solving):
         self.pushButton_percent.setText(f"%")
         self.pushButton_delete.setText(f"Del")
         self.pushButton_clear.setText(f"C")
+        self.show_history.setText("History")
 
         self.number_input.setText(f"0")
-
         self.input_display.setText(f"0")
         self.result_display.display(f"0")
 
@@ -75,6 +74,14 @@ class CalculatorFirst( QMainWindow, Solving):
 
         self.pushButton_equal_to.clicked.connect(self.ans)
 
+        self.pushButton_hide.clicked.connect(self.hide_button)
+        self.show_history.clicked.connect(self.show_button)
+
+    def hide_button(self):
+        self.historyFrame.hide()
+
+    def show_button(self):
+        self.historyFrame.show()
 
 import sys
 app = QApplication()

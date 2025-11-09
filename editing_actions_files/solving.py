@@ -75,7 +75,6 @@ class Solving(ButtonActions):
         self.pushButton_dot.setEnabled(False)
 
 
-
     def ans(self):
         try:
             self.val_1 = float(self.input_display.text()[0: len(self.input_display.text()) -1])
@@ -99,23 +98,16 @@ class Solving(ButtonActions):
 
             elif self.operator == "c": self.answer = AdvancedBasicMethods().combine(int(self.val_1), int(self.val_2))
 
-            my_font = QFont()
-            my_font.setPointSize(10)
-            my_font.setBold(True)
-
-            label = QLabel(self.scrollAreaWidgetContents)
-            label.setObjectName("answer_label")
-            label.setFont(my_font)
-
-            label.setText(f"{self.input_display.text()} {self.number_input.text()} = {self.answer}")
-            label.adjustSize()
             self.result_display.display(f"{self.answer}")
             self.input_display.setText(f"0")
             self.number_input.setText(f"0")
-            self.gridLayout.addWidget(label, self.position, 0)
+
+            (self.historyWidget.findChild(QLabel, f"history_label_{self.position % 10}").
+             setText(f"{self.input_display.text()} {self.number_input.text()} = {self.answer}"))
+
             self.position = self.position + 1
 
         except ValueError:
-            self.result_display.display(f"You May Have Given The Wrong Inputs")
+            self.result_display.display(f"------------")
             self.input_display.setText(f"0")
             self.number_input.setText(f"0")

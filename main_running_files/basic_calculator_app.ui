@@ -44,7 +44,7 @@ background-color: rgb(170, 170, 127);
   <property name="dockNestingEnabled">
    <bool>true</bool>
   </property>
-  <widget class="QWidget" name="centralwidget">
+  <widget class="QWidget" name="central_widget">
    <layout class="QHBoxLayout" name="horizontalLayout_7">
     <item>
      <widget class="QFrame" name="mainCalculatorFrame">
@@ -225,6 +225,35 @@ background-color: rgb(170, 170, 127);
              <enum>QFrame::Shadow::Raised</enum>
             </property>
             <layout class="QHBoxLayout" name="horizontalLayout_8">
+             <item>
+              <widget class="QPushButton" name="show_history">
+               <property name="minimumSize">
+                <size>
+                 <width>61</width>
+                 <height>41</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>16777215</width>
+                 <height>16777215</height>
+                </size>
+               </property>
+               <property name="font">
+                <font>
+                 <pointsize>17</pointsize>
+                 <italic>true</italic>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">background-color: rgb(85, 170, 255);</string>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+              </widget>
+             </item>
              <item>
               <widget class="QPushButton" name="pushButton_permutation">
                <property name="minimumSize">
@@ -729,7 +758,7 @@ background-color: rgb(85, 170, 255);</string>
            </widget>
           </item>
           <item>
-           <widget class="QFrame" name="fourthRowFframe">
+           <widget class="QFrame" name="fourthRowFrame">
             <property name="minimumSize">
              <size>
               <width>652</width>
@@ -1576,8 +1605,8 @@ border-radius: 5px;
          <widget class="QWidget" name="scrollAreaWidgetContents">
           <property name="geometry">
            <rect>
-            <x>-141</x>
-            <y>0</y>
+            <x>0</x>
+            <y>-29</y>
             <width>318</width>
             <height>422</height>
            </rect>
@@ -1595,58 +1624,108 @@ border-radius: 5px;
               <item>
                <layout class="QGridLayout" name="gridLayout">
                 <item row="1" column="0">
-                 <widget class="QLabel" name="history_label_2">
+                 <widget class="QLabel" name="history_label_1">
+                  <property name="font">
+                   <font>
+                    <pointsize>10</pointsize>
+                    <italic>true</italic>
+                    <bold>true</bold>
+                   </font>
+                  </property>
                   <property name="text">
                    <string/>
                   </property>
                  </widget>
                 </item>
                 <item row="6" column="0">
-                 <widget class="QLabel" name="history_label_7">
+                 <widget class="QLabel" name="history_label_6">
+                  <property name="font">
+                   <font>
+                    <pointsize>10</pointsize>
+                    <italic>true</italic>
+                    <bold>true</bold>
+                   </font>
+                  </property>
                   <property name="text">
                    <string/>
                   </property>
                  </widget>
                 </item>
                 <item row="7" column="0">
-                 <widget class="QLabel" name="history_label_8">
+                 <widget class="QLabel" name="history_label_7">
+                  <property name="font">
+                   <font>
+                    <pointsize>10</pointsize>
+                    <italic>true</italic>
+                    <bold>true</bold>
+                   </font>
+                  </property>
                   <property name="text">
                    <string/>
                   </property>
                  </widget>
                 </item>
                 <item row="8" column="0">
-                 <widget class="QLabel" name="history_label_9">
+                 <widget class="QLabel" name="history_label_8">
+                  <property name="font">
+                   <font>
+                    <pointsize>10</pointsize>
+                    <italic>true</italic>
+                    <bold>true</bold>
+                   </font>
+                  </property>
                   <property name="text">
                    <string/>
                   </property>
                  </widget>
                 </item>
                 <item row="5" column="0">
-                 <widget class="QLabel" name="history_label_6">
+                 <widget class="QLabel" name="history_label_5">
+                  <property name="font">
+                   <font>
+                    <pointsize>10</pointsize>
+                    <italic>true</italic>
+                    <bold>true</bold>
+                   </font>
+                  </property>
                   <property name="text">
                    <string/>
                   </property>
                  </widget>
                 </item>
                 <item row="4" column="0">
-                 <widget class="QLabel" name="history_label_5">
+                 <widget class="QLabel" name="history_label_4">
+                  <property name="font">
+                   <font>
+                    <pointsize>10</pointsize>
+                    <italic>true</italic>
+                    <bold>true</bold>
+                   </font>
+                  </property>
                   <property name="text">
                    <string/>
                   </property>
                  </widget>
                 </item>
                 <item row="2" column="0">
-                 <widget class="QLabel" name="history_label_3">
+                 <widget class="QLabel" name="history_label_2">
+                  <property name="font">
+                   <font>
+                    <pointsize>10</pointsize>
+                    <italic>true</italic>
+                    <bold>true</bold>
+                   </font>
+                  </property>
                   <property name="text">
                    <string/>
                   </property>
                  </widget>
                 </item>
                 <item row="0" column="0">
-                 <widget class="QLabel" name="history_label_1">
+                 <widget class="QLabel" name="history_label_0">
                   <property name="font">
                    <font>
+                    <pointsize>10</pointsize>
                     <italic>true</italic>
                     <bold>true</bold>
                    </font>
@@ -1657,14 +1736,28 @@ border-radius: 5px;
                  </widget>
                 </item>
                 <item row="3" column="0">
-                 <widget class="QLabel" name="history_label_4">
+                 <widget class="QLabel" name="history_label_3">
+                  <property name="font">
+                   <font>
+                    <pointsize>10</pointsize>
+                    <italic>true</italic>
+                    <bold>true</bold>
+                   </font>
+                  </property>
                   <property name="text">
                    <string/>
                   </property>
                  </widget>
                 </item>
                 <item row="9" column="0">
-                 <widget class="QLabel" name="history_label_10">
+                 <widget class="QLabel" name="history_label_9">
+                  <property name="font">
+                   <font>
+                    <pointsize>10</pointsize>
+                    <italic>true</italic>
+                    <bold>true</bold>
+                   </font>
+                  </property>
                   <property name="text">
                    <string/>
                   </property>
