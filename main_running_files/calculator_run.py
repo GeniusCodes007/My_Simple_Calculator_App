@@ -29,6 +29,7 @@ class CalculatorFirst( QMainWindow, Solving):
         self.pushButton_delete.setText(f"Del")
         self.pushButton_clear.setText(f"C")
         self.show_history.setText("History")
+        self.pushButton_multiply.setText("x")
 
         self.number_input.setText(f"0")
         self.input_display.setText(f"0")

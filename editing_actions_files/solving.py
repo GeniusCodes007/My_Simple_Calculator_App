@@ -98,12 +98,13 @@ class Solving(ButtonActions):
 
             elif self.operator == "c": self.answer = AdvancedBasicMethods().combine(int(self.val_1), int(self.val_2))
 
+            (self.historyWidget.findChild(QLabel, f"history_label_{self.position % 10}").
+             setText(f"{self.input_display.text()} {self.number_input.text()} = {self.answer}"))
+
             self.result_display.display(f"{self.answer}")
             self.input_display.setText(f"0")
             self.number_input.setText(f"0")
 
-            (self.historyWidget.findChild(QLabel, f"history_label_{self.position % 10}").
-             setText(f"{self.input_display.text()} {self.number_input.text()} = {self.answer}"))
 
             self.position = self.position + 1
 
