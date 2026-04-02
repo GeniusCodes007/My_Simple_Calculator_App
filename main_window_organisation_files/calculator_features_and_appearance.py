@@ -10,6 +10,7 @@ class CalculatorFeatures_and_Appearance(Solving):
 
     def set_validator(self):
         self.number_input.setValidator(QDoubleValidator())
+        self.input_display.setValidator(QDoubleValidator())
 
     def main_window_set_texts(self):
 
@@ -34,7 +35,8 @@ class CalculatorFeatures_and_Appearance(Solving):
         self.pushButton_delete.setText(f"Del")
         self.pushButton_clear.setText(f"C")
         self.show_history.setText("History")
-        #self.abs_pushButton.setText("Abs")
+        self.abs_pushButton.setText("Abs")
+        self.what_percent_pushButton.setText("?%")
 
         # INPUT WIDGETS
         self.number_input.setText(f"0")
@@ -84,6 +86,7 @@ class CalculatorFeatures_and_Appearance(Solving):
         self.pushButton_permutation.clicked.connect(self.permutate_button)
         self.pushButton_combination.clicked.connect(self.combine_button)
         self.abs_pushButton.clicked.connect(self.absolute_button)
+        self.what_percent_pushButton.clicked.connect(self.what_percent_button)
 
         # EQUAL TO BUTTON ACTION
         self.pushButton_equal_to.clicked.connect(self.ans)

@@ -7,7 +7,7 @@ class CalculatorOrganisation(CalculatorFeatures_and_Appearance):
         #self.setupUi(self)
 
         # Window Icon
-        self.setWindowIcon(QIcon("../images/calc_icon.jpg"))
+        self.setWindowIcon(QIcon("C:/Users/GENIUS DEXTER/My_Simple_Calculator_App/images/calc_icon.jpg"))
 
         self.main_window_set_texts()
 
@@ -19,6 +19,6 @@ class CalculatorOrganisation(CalculatorFeatures_and_Appearance):
 
         self.hide_show_history_push_button()
 
-        self.set_Visibles()
+        #self.set_Visibles()
 
 

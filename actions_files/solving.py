@@ -1,5 +1,5 @@
-
-from in_app_database.database_operations import add_to_history
+from actions_files.non_numeric_operations.non_numeric_operations_buttons_actions import Answer
+#from in_app_database.database_operations import add_to_history
 from actions_files.button_actions import ButtonActions
 from formulasAndFunctions.calculator_mathematical_functions import Calculator_Mathematical_Functions
 
@@ -77,29 +77,33 @@ class Solving(ButtonActions):
             self.val_1 = float(self.input_display.text()[0: len(self.input_display.text()) -1])
             self.val_2 = float(self.number_input.text())
 
-            if self.operator == "+": self.answer = Calculator_Mathematical_Functions().add(self.val_1, self.val_2)
+            if self.operator.operator_symbol == "+": self.answer = Calculator_Mathematical_Functions().add(self.val_1, self.val_2)
 
-            elif self.operator == "-": self.answer = Calculator_Mathematical_Functions().difference(self.val_1, self.val_2)
+            elif self.operator.operator_symbol == "-": self.answer = Calculator_Mathematical_Functions().difference(self.val_1, self.val_2)
 
-            elif self.operator == "*": self.answer = Calculator_Mathematical_Functions().multiply(self.val_1, self.val_2)
+            elif self.operator.operator_symbol == "*": self.answer = Calculator_Mathematical_Functions().multiply(self.val_1, self.val_2)
 
-            elif self.operator == "/": self.answer = Calculator_Mathematical_Functions().divide(self.val_1, self.val_2)
+            elif self.operator.operator_symbol == "/": self.answer = Calculator_Mathematical_Functions().divide(self.val_1, self.val_2)
 
-            elif self.operator == "%": self.answer = Calculator_Mathematical_Functions().percentage(self.val_1, self.val_2)
+            elif self.operator.operator_symbol == "%": self.answer = Calculator_Mathematical_Functions().percentage(self.val_1, self.val_2)
 
-            elif self.operator == "^": self.answer = Calculator_Mathematical_Functions().raise_to_power(self.val_1, self.val_2)
+            elif self.operator.operator_symbol == "^": self.answer = Calculator_Mathematical_Functions().raise_to_power(self.val_1, self.val_2)
 
-            elif self.operator == "\u221A": self.answer = Calculator_Mathematical_Functions().roots(int(self.val_1), self.val_2)
+            elif self.operator.operator_symbol == "\u221A": self.answer = Calculator_Mathematical_Functions().roots(int(self.val_1), self.val_2)
 
-            elif self.operator == "p": self.answer = Calculator_Mathematical_Functions().permutate(int(self.val_1), int(self.val_2))
+            elif self.operator.operator_symbol == "p": self.answer = Calculator_Mathematical_Functions().permutate(int(self.val_1), int(self.val_2))
 
-            elif self.operator == "c": self.answer = Calculator_Mathematical_Functions().combine(int(self.val_1), int(self.val_2))
+            elif self.operator.operator_symbol == "c": self.answer = Calculator_Mathematical_Functions().combine(int(self.val_1), int(self.val_2))
 
-            add_to_history(f"{self.input_display.text()} {self.number_input.text()} = ",
-                           f"{self.answer}")
+            elif self.operator.operator_symbol == "?": self.answer = Calculator_Mathematical_Functions().what_percent(self.val_1, self.val_2)
+
+            my_answer = Answer(self.answer)
+
+            my_answer.add_to_history(f"{self.input_display.text()} {self.number_input.text()} = ")
             self.display_on_history_table()
 
-            self.result_display.setText(f"{self.answer}")
+
+            self.result_display.setText(f"{my_answer.answer}")
             self.input_display.setText(f"0")
             self.number_input.setText(f"0")
 

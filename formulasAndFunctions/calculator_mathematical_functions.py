@@ -20,6 +20,11 @@ class Calculator_Mathematical_Functions:
     def percentage(base_num: float, percent_num: float):
         return float(base_num) * float(percent_num / 100)
 
+    @staticmethod
+    def what_percent(whole_fraction: float, percent_fraction: float):
+        the_percent = 100 * (percent_fraction/whole_fraction)
+        return the_percent
+
     # done
     @staticmethod
     def raise_to_power(base_num, expo):
@@ -80,3 +85,4 @@ class Calculator_Mathematical_Functions:
 
     @staticmethod
     def mod_whole(base_num:float, divisor:float): return int(base_num // divisor)
+
