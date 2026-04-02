@@ -1,10 +1,10 @@
 
-from formulasAndFunctions.advanced_basic_methods import EssentialMethods
+from formulasAndFunctions.calculator_mathematical_functions import Calculator_Mathematical_Functions
 import math
-class TrigMethods(EssentialMethods):
+class TrigMethods(Calculator_Mathematical_Functions):
     def sine(self, angle:float):
         if self.mod_rem(angle, 360) == 30:
-            return (1/2)
+            return 1/2
 
         elif self.mod_rem(angle, 360) == 0:
             return 0.0

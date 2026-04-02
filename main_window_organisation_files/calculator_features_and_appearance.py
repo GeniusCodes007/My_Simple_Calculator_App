@@ -1,14 +1,19 @@
-from editing_actions_files.solving import *
-from PySide6.QtWidgets import QApplication,QMainWindow
-from PySide6.QtGui import QIcon
+from actions_files.solving import Solving
+from PySide6.QtGui import QDoubleValidator
 
-class CalculatorFirst( QMainWindow, Solving):
+
+
+class CalculatorFeatures_and_Appearance(Solving):
+
     def __init__(self):
-        super(CalculatorFirst, self).__init__()
-        self.setupUi(self)
+        super().__init__()
 
-        self.setWindowIcon(QIcon("calc_icon.jpg"))
+    def set_validator(self):
+        self.number_input.setValidator(QDoubleValidator())
 
+    def main_window_set_texts(self):
+
+        # OPERATOR BUTTONS
         self.pushButton_permutation.setText(f"P\u207F\u1D63")
         self.pushButton_combination.setText(f"C\u207F\u1D63")
         self.pushButton_cube_root.setText(f"\u00B3\u221Ay")
@@ -29,15 +34,20 @@ class CalculatorFirst( QMainWindow, Solving):
         self.pushButton_delete.setText(f"Del")
         self.pushButton_clear.setText(f"C")
         self.show_history.setText("History")
-        self.pushButton_multiply.setText("x")
+        #self.abs_pushButton.setText("Abs")
 
+        # INPUT WIDGETS
         self.number_input.setText(f"0")
+
+        # OUTPUT WIDGETS
         self.input_display.setText(f"0")
-        self.result_display.display(f"0")
+        self.result_display.setText(f"0")
 
-        self.pushButton_delete.clicked.connect(self.delete)
-        self.pushButton_clear.clicked.connect(self.clear)
+    def main_window_buttons_actions(self):
 
+
+
+        # NUMERALS BUTTON ACTIONS
         self.pushButton_one.clicked.connect(self.one)
         self.pushButton_two.clicked.connect(self.two)
         self.pushButton_three.clicked.connect(self.three)
@@ -51,6 +61,7 @@ class CalculatorFirst( QMainWindow, Solving):
 
         self.pushButton_dot.clicked.connect(self.dot)
 
+        # OPERATOR BUTTONS ACTIONS
         self.pushButton_plus.clicked.connect(self.plus_button)
         self.pushButton_minus.clicked.connect(self.minus_button)
         self.pushButton_multiply.clicked.connect(self.multiply_button)
@@ -72,20 +83,29 @@ class CalculatorFirst( QMainWindow, Solving):
         self.pushButton_factorial.clicked.connect(self.factorial_button)
         self.pushButton_permutation.clicked.connect(self.permutate_button)
         self.pushButton_combination.clicked.connect(self.combine_button)
+        self.abs_pushButton.clicked.connect(self.absolute_button)
 
+        # EQUAL TO BUTTON ACTION
         self.pushButton_equal_to.clicked.connect(self.ans)
 
-        self.pushButton_hide.clicked.connect(self.hide_button)
-        self.show_history.clicked.connect(self.show_button)
+        # NON NUMERIC BUTTONS ACTIONS
 
-    def hide_button(self):
-        self.historyFrame.hide()
+        # HIDE HISTORY BUTTON ACTION
+        self.pushButton_hide_history.clicked.connect(self.hide_history_button)
 
-    def show_button(self):
-        self.historyFrame.show()
+        # CLEAR HISTORY BUTTON ACTION
+        self.show_history.clicked.connect(self.show_history_button)
 
-import sys
-app = QApplication()
-window = CalculatorFirst()
-window.show()
-sys.exit(app.exec())
+        # DISPLAY CONTROL BUTTON ACTIONS
+        self.pushButton_delete.clicked.connect(self.delete_input)
+        self.pushButton_clear.clicked.connect(self.clear_input)
+
+        # CLEAR HISTORY
+        self.pushButton_clear_history.clicked.connect(self.clear_history_button)
+
+    def hide_show_history_push_button(self):
+        self.show_history.setVisible(False)
+
+    def set_Visibles(self):
+        self.abs_pushButton.setVisible(False)
+        self.what_percent_pushButton.setVisible(False)
