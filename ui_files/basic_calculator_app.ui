@@ -58,7 +58,7 @@ background-color: rgb(170, 170, 127);
       <property name="maximumSize">
        <size>
         <width>16777215</width>
-        <height>1000</height>
+        <height>16777215</height>
        </size>
       </property>
       <property name="frameShape">
